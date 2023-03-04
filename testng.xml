@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+<!--    <test verbose="2" preserve-order="true" name="C:/Users/EKTA/IdeaProjects/TestNGMethodParamether">-->
+    <test name="Firefox Browser">
+        <classes>
+            <class name="com.bridgelabz.test.TestMethodParameter">
+                <methods>
+                    <parameter name="phoneNo" value="987655566"></parameter>
+                    <parameter name="emailId" value="ekta@gmail.com"></parameter>
+                    <include name="test_PhNo_EId"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Chrome Browser">
+    <classes>
+            <class name="com.bridgelabz.test.JavaScriptExecutor">
+                <methods>
+                    <include name="Execute"/>
+                </methods>
+            </class>
+            <class name="com.bridgelabz.test.TestFailClass">
+                <methods>
+                    <include name="testPassed"/>
+                    <include name="testFailed"/>
+                    <include name="testDepend"/>
+                </methods>
+            </class>
+            <class name="com.bridgelabz.test.WebinarScreen">
+                <methods>
+                    <include name="WebinarScreen"/>
+                    <include name="phoneNo"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
